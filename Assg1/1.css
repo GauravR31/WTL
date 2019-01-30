@@ -1,0 +1,83 @@
+body {
+	background-color: #00BFFF;
+	color: #ffffff;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+header {
+	animation: fadeIn 1s;
+	-webkit-animation: fadein 1s;
+}
+
+#main {
+	margin: 12px;
+}
+
+h1 {
+	font-family: Helvetica;
+	text-shadow: 2px 2px #000000;
+}
+
+#Form {
+	/*display: block;*/
+	margin-top: 10px;
+	padding: 4px;
+	width: 370px;
+}
+
+label {
+	width : 240px;
+	text-align: left;
+	float: left;
+	margin: 4px;
+	padding: 4px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+}
+
+input, select {
+	float: left;
+	margin : 4px;
+	padding: 2px;
+	font-family: Arial, sans-serif;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+	background-color: #bcbcbc;
+	outline: none;
+}
+
+
+br {
+	clear: left;
+}
+
+@keyframes fadeIn {
+   from {opacity: 0;}
+   to {opacity: 1;}
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+input[type=submit] {
+	background-color: #008CBA;
+	font-size: 20px;
+	color: #FFFFFF;
+	border-radius: 8px;
+	padding: 8px;
+} 
