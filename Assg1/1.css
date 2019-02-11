@@ -12,11 +12,6 @@ img {
 	padding: 10px;
 }
 
-header {
-	animation: fadeIn 1s;
-	-webkit-animation: fadein 1s;
-}
-
 #main {
 	margin: 12px;
 }
@@ -33,7 +28,7 @@ h1 {
 	width: 370px;
 }
 
-label {
+label, #main_signup {
 	width : 240px;
 	text-align: left;
 	float: left;
@@ -58,20 +53,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
 
 br {
 	clear: left;
-}
-
-@keyframes fadeIn {
-   from {opacity: 0;}
-   to {opacity: 1;}
-}
-
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
 }
 
 input[type=submit] {

@@ -1,27 +1,40 @@
 <!Doctype html>
 <html>
 	<head>
+		<script src="jquery-3.3.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="1.css">
 		<title> Login to the Chelsea FC Fan Site!</title>
+		<script>
+			$(document).ready(function() {
+				$("#Form").hide();
+				$("#login_header").click(function() {
+					$("#Form").slideToggle();
+				});
+			});
+		</script>
+		<script type="text/javascript" src="Login.js"></script>
 	</head>
 
 	<body>
 		<header>
-			<img src="Chelsea FC Logo.png" alt="Chelsea FC Logo" width="132px" height="132px">
+			<img src="Chelsea FC Logo.png" id="header_img" alt="Chelsea FC Logo" width="132px" height="132px">
 		</header>
 
+		
 		<div id="main">
-			<h1> Login </h1>
+			<h1 id="login_header"> Login </h1>
 
-			<div id="Form"></div>
+			<form id="Form">
 			<label> Email address</label>
 				<input type="email" name="email" placeholder="Email"><br>
 
 				<label> Password </label>
 				<input type="password" name="password" placeholder="Password"><br>
 
-				<input type="Submit" name="submitButton" value="Login" style="padding: 4px;"> <br>
+				<input type="Submit" name="submitButton" value="Login" style="padding: 4px;" onclick="validation()"> <br>
 
 				<a href="Signup.html" style="align-items: center; margin: 8px;"> Not registered yet? Click here to sign up. </a>
+			</form>
+		</div>
 	</body>
 </html>

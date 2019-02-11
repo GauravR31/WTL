@@ -1,17 +1,29 @@
 <!Doctype html>
 <html>
 	<head>
+		<script src="jquery-3.3.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="1.css">
 		<title> Register for the Chelsea FC Fan Site!</title>
+		<script>
+			$(document).ready(function() {
+				$("#Form").hide();
+				$("#signup_header").click(function() {
+					$("#Form").slideToggle();
+				});
+			});
+		</script>
+		<script type="text/javascript" src="Signup.js"></script>
 	</head>
 
 	<body>
 		<header>
-			<img src="Chelsea FC Logo.png" alt="Chelsea FC Logo" width="132px" height="132px">
+			<img src="Chelsea FC Logo.png" id="header_img" alt="Chelsea FC Logo" width="132px" height="132px">
 		</header>
 
 		<div id="main">
-			<h1> Sign Up </h1>
+			<h1 id="signup_header"> Sign Up </h1>
+
+			<form id="Form">
 
 				<label for="name"> Name </label>
 				<input type="text" name="name" id="name" placeholder="Name"><br>
@@ -29,7 +41,7 @@
 				<input type="text" name="city" placeholder="City"><br>
 
 				<label> State </label>
-				<input type="text" name="State" placeholder="State"><br>
+				<input type="text" name="state" placeholder="State"><br>
 
 				<label> Country </label>
 				<select name="country">
@@ -294,8 +306,8 @@
 				<input type="checkbox" name="emailCheck">
 				<label style="width: 480px;"> Would you like to receive emails about Chelsea FC and other football related content? </label><br>
 
-				<input type="Submit" name="submitButton" value="Sign Up" style="padding: 4px;" onclick="nameValidation()">
-			</div>
-		<script type="text/javascript" src="Signup.js"></script>
+				<input type="Submit" name="submitButton" id="submit" value="Sign Up" style="padding: 4px;" onclick="validation()">
+			</form>
+		</div>
 	</body>
 </html>
