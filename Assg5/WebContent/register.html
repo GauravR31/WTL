@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <title>Sign Up!</title>
+		 <link rel="stylesheet" type="text/css" href="1.css">
+	</head>
+	<body>
+		<header>
+			<img src="/home/pccoe/TECOB274/Assg 1/Chelsea FC Logo.png" id="header_img" alt="Chelsea FC Logo" width="132px" height="132px">
+		</header>
+
+		<div id="main">
+			<h1 id="signup_header"> Sign Up </h1>
+
+			<form id="Form" action="./Servlet">
+
+				<label for="name"> Name </label>
+				<input type="text" name="name" id="name" placeholder="Name"><br>
+
+				<label> Email address</label>
+				<input type="email" name="email" id="email" placeholder="Email"><br>
+
+				<label> Password </label>
+				<input type="password" name="password" id="password" placeholder="Password"><br>
+
+				<label> Confirm Password </label>
+				<input type="password" name="passwordConfirm" placeholder="Password Confirmation"><br>
+
+				<label> City </label>
+				<input type="text" name="city" id="city" placeholder="City"><br>
+
+				<label> State </label>
+				<input type="text" name="state" id="state" placeholder="State"><br>
+		
+				<label> Gender </label>
+				<input type="radio" name="gender" id="gender" value="male"/> Male <br>
+				<input type="radio" name="gender" id="gender" value="female"/> Female <br>
+				<input type="radio" name="gender" id="gender" value = "non-binary"> Non-binary <br>
+				
+				<input type="checkbox" name="emailCheck" id="promo"/> Would you like to receive emails about Chelsea FC and other football related content? <br>
+
+				<input type="Submit" name="submitButton" id="submit" value="Sign Up" style="padding: 4px;" onclick="validation()">
+			</form>
+		</div>
+	</body>
+</html>
