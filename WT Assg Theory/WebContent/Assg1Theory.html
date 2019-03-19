@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Welcome to the Chelsea FC Fan Site
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#players_content").hide();
+			$("#subscribe_content").hide();
+			$("#home").on("click", function () {
+				$("#players_content").hide();
+				$("subscribe_content").hide();
+				$("#home_content").fadeIn();
+			});
+
+			$("#players").on("click", function () {
+				$("#home_content").hide();
+				$("subscribe_content").hide();
+				$("#players_content").fadeIn();
+			})
+
+			$("#subscribe").on("click", function () {
+				$("#home_content").hide();
+				$("#players_content").hide();
+				$("#subscribe_content").fadeIn();
+			})
+		});
+	</script>
+	<link rel="stylesheet" type="text/css" href="Assg1Theory.css">
+</head>
+<body>
+	<header>
+		<h1> Chelsea FC Fan Site </h1> <br>
+		<img src="Chelsea FC Logo.svg" alt="Chelsea FC Logo">
+	</header>
+
+	<div id="navbar">
+		<ul id="navbar_list">
+			<li id="home">Home</li>
+			<li id="players"> Players</li>
+			<li id="subscribe">Subscribe</li>
+			<li id="tickets"><a href="https://www.chelseafc.com" target="_blank"> Tickets </a></li>
+		</ul>
+	</div>
+
+	<div id="subscribe_content">
+		<p>Subscribe to receive all Chelsea FC news straight to your inbox. It's totally free!</p>
+		<form>
+			<input type="email" name="email" placeholder="Enter your email address">
+			<input type="submit" name="submit">
+		</form>
+	</div>
+
+	<div id="home_content">
+		<p>Chelsea Football Club is a professional football club based in London, England, that competes in the Premier League, the highest tier of English football. The club has won eight League titles, eight FA Cups, five League Cups, four FA Community Shields, two UEFA Cup Winners' Cups, one UEFA Champions League, one UEFA Europa League, and one UEFA Super Cup. <br><br>
+
+		Founded in 1905, the club's home ground since then has been Stamford Bridge. Chelsea won its only First Division title in 1955, but saw limited success in various cup competitions until 2003, when the club was purchased by Russian billionaire Roman Abramovich. Chelsea then saw heavy investment, and have since won eighteen honours under Abramovich. In terms of club value, Chelsea are the seventh most valuable football club in the world, worth £1.54 billion ($2.06 billion), and are the eighth highest-earning football club in the world, with earnings of over €428 million in the 2017–18 season. Based on attendance figures, the club have the sixth-largest fanbase in England.</p>
+	</div>
+
+	<div id="players_content">
+		<table>
+			<tr>
+				<th>Number</th>
+				<th>Name</th>
+				<th>Position</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Kepa Arizzabalaga</td>
+				<td>Goalkeeper</td>
+			</tr>
+			<tr>
+				<td>28</td>
+				<td>Cesar Azpilicueta</td>
+				<td>Defender</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Antonio Rudiger</td>
+				<td>Defender</td>
+			</tr>
+			<tr>
+				<td>30</td>
+				<td>David Luiz</td>
+				<td>Defender</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Marcos Alonso</td>
+				<td>Defender</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Jorginho</td>
+				<td>Midfielder</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>N'Golo Kante</td>
+				<td>Midfielder</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>Ross Barkley</td>
+				<td>Midfielder</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Eden Hazard</td>
+				<td>Forward</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>Gonzalo Higuain</td>
+				<td>Forward</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>Pedro</td>
+				<td>Forward</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

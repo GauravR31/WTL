@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+}
+
+h1 {
+	margin: auto;
+	text-align: center;
+	padding: 4px;
+	padding-top: 8px;
+	color: #004080;
+}
+
+img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 8px;
+}
+
+header {
+	background-color: #66b3ff;
+}
+
+ul#navbar_list {
+	margin :0;
+	height: auto;
+	background-color: #0066cc;
+	padding: 8px;
+}
+
+ul#navbar_list li {
+	display: inline;
+	margin: 4px;
+	font-size: 24px;
+	color: white;
+}
+
+p {
+	font-size: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+#home_content, #players_content, #subscribe_content {
+	background-color: #66b3ff;
+	margin: 0;
+	padding: 8px;
+	color: white;
+	height: 100%;
+}
+
+table {
+	margin: 12px;
+}
+
+th {
+	padding: 4px;
+	font-size: 20px;
+}
+
+td {
+	padding: 4px;
+	font-size: 20px;
+}
